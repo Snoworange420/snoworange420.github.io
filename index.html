@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>You are an Idiot!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="idiot.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <script src="idiot.js"></script>
+    <script type="text/javascript">
+       (function () {
+    var triedToUnload = false;
+    window.onbeforeunload = function (e) {
+        triedToUnload = true;
+        return "Are you an idiot?";
+    };
+    window.setInterval(function () {
+        if (triedToUnload) {
+          url = "lol.html"
+            aWindow = window.open(url, "_blank", 'menubar=no, status=no, toolbar=no, resizable=no, width=357, height=330, titlebar=no, alwaysRaised=yes');
+        }
+    }, 500);
+}());
+    </script>
+  </body>
+</html>
