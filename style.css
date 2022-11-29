@@ -1,2 +1,15 @@
-font-family: 'Montserrat', sans-serif;
-font-weight: 100;
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.w100 {
+  font-weight: 100;
+}
+.w200 {
+  font-weight: 200;
+}
+.w300 {
+  font-weight: 300;
+}
+.w400 {
+  font-weight: 400;
+}
